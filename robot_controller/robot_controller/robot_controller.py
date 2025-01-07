@@ -6,7 +6,7 @@ import time
 
 class RobotController(Node):
     def __init__(self):
-        super().__init__('robot_controller')
+        super().__init__('Robot_controller')
 
         # Publisher per inviare comandi di velocità
         self.cmd_vel_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
