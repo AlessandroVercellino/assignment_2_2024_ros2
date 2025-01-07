@@ -53,7 +53,7 @@ def main(args=None):
     try:
         node.move_robot()
     except KeyboardInterrupt:
-        node.get_logger().info("Node stopped by user.")
+        node.get_logger().info("Node stopped.")
     finally:
         node.destroy_node()
         rclpy.shutdown()
